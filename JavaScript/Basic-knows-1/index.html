@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <label for="">Enter your age:</label>
+    <input type="text" id="myText"><br>
+    <button type="submit" id="mySubmit">Submit</button>
+    <p id="resultElement"></p>
+
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">subscribe</label><br><br>
+    <!-- if the for attribute for label is the same as the id for input, it will be linked 
+        When we click on the label, the checkbox will also be checked-->
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label><br>
+    <input type="radio" id="masterCardBtn" name="card">
+    <label for="masterCardBtn">MasterCard</label><br>
+    <input type="radio" id="payPalBtn" name="card">
+    <label for="payPalBtn">PayPal</label><br><br>
+    <button type="submit" id="mySubmit2">Submit</button>
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+    <script src="./index.js"></script>
+</body>
+</html>
