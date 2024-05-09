@@ -1,0 +1,34 @@
+1.Counter
+-Introduce Vue
+-State
+-Event Handler
+
+
+2. Notes  
+- Directives
+
+3. Quiz
+-Components
+-Props
+-Watch
+-Emit
+-Routes
+-Compute
+
+4.TV Show
+-Fetching Data
+-Lifecycle Hooks
+-Suspense
+-Slots
+-Keep alive
+-Composables
+
+5.Instagram clone
+-Authentication
+-Pinia
+-Database Relations
+-Uploading Phots
+-Pagination
+-Vue UI Library
+
+All of there before 0:04:00

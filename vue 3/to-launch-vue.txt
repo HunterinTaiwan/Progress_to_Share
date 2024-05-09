@@ -1,0 +1,54 @@
+npm init vue@latest
+----above is first time creating
+cd (projectname)
+npm install
+-----below are the next time opening
+npm run dev
+
+npm install problem
+Corrupted package cache: 
+Try clearing the npm cache by running "npm cache clean --force" and then running npm install again.
+
+
+
+
+npm install
+when creating vue app, we have our new app,
+it has bunch of different codes in this app itself.
+However this code is not the only code we need in order to run app.
+if skipped this step, errors given.
+"vite" is a package that lives in node pkg manager.
+some third party in the cloud, we need access to and bring into this app.
+vite is not the only one, there're three other packages "vue" "@vitejs/plugin-vue" "vite"
+The app are depenedent on there three pkgs. "it can be seen in package.json and in node_modules folder"
+These three(depnedencies) have their own diffferent dependencies. Other packages are their dependencies.
+
+
+npm run dev
+it spins up vue development server on our local machine.
+and request content.
+in the package.json, look at the scripts, when run npm run something, that thing will run, like run dev,
+it will only run "dev": "vite"
+
+
+how vue server serves the content to browser
+vue send back only html to browser.
+It is a special html file, index.html is almost empty.
+right after it sends html, it bundles up all of differnet logics into a singular js file.
+It sends the browser that javascript, which conatins all of the instructions
+about the element we need to render.
+Right after browser parsing it, we will have our content in our app.
+
+TWO Vue Terminals
+Clident Side Rendered
+The application being rendered in the client.
+When we pass HTML, it was completely empty.  give js, the browser was able to parse the js to the client.
+
+Single Page Application
+Why? It only send us one index.html.  Even there are ohter pages to show, It will still be the exact same HTML.
+It would only use js to change HTML within exact same index.html.
+
+main.js
+in the file, it creates App from App.vue and mounting all of the HTML elements inside excisting HTML element that has an id of App 
+it is the thing that exists in index.html in this vue folder
+
